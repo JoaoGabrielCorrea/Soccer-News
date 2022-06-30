@@ -3,7 +3,7 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     android:layout_margin="8dp">
 
@@ -19,6 +19,7 @@
             android:contentDescription="@string/cd_news_image"
             android:src="@color/teal_200"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:srcCompat="@tools:sample/avatars" />
@@ -61,6 +62,8 @@
             android:clickable="true"
             android:contentDescription="@string/favorite_icon"
             android:focusable="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/btopenLink"
             app:layout_constraintEnd_toStartOf="@+id/ivShare"
@@ -76,6 +79,8 @@
             android:clickable="true"
             android:contentDescription="@string/cd_share_icon"
             android:focusable="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/btopenLink"
             app:layout_constraintEnd_toEndOf="parent"
