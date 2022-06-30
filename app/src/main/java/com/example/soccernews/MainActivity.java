@@ -1,6 +1,7 @@
 package com.example.soccernews;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -9,10 +10,15 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.soccernews.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
+
+    SwipeRefreshLayout refreshLayout;
+            TextView textView;
+
 
     private ActivityMainBinding binding;
 
